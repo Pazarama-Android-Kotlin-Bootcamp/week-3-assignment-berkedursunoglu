@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ThirdAssingment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Rarity">Değerlilik</string>
+    <string name="BookType">Kitap Türü</string>
+    <string name="BookPaperSize">Sayfa Sayısı:</string>
+    <string name="BookSummary">Kitap Özeti</string>
+    <string name="ShowBookItemSize">Listelenen Kitap Sayısı:</string>
+</resources>

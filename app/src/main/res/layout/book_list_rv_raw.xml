@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="bookModel"
+            type="com.berkedursunoglu.thirdassingment.models.BookModel" />
+    </data>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="20dp"
+    android:layout_marginBottom = "16dp"
+    android:layout_marginTop = "3dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal = "17dp"
+        android:layout_marginBottom = "16dp">
+
+        <ImageView
+            android:id="@+id/ivBookImage"
+            android:layout_width="105dp"
+            android:layout_height="205dp"
+            tools:ignore="ContentDescription"
+            android:layout_marginTop = "17dp"
+            android:layout_marginStart = "16dp"
+            android:layout_marginEnd = "16dp"/>
+
+        <TextView
+            android:id="@+id/tvBookName"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@{bookModel.bookName}"
+            app:fontFamily="@font/poppins_semi_bold"
+            android:textSize="14sp"
+            android:layout_marginTop = "17dp"
+            android:layout_marginLeft = "17dp"/>
+
+        <TextView
+            android:id="@+id/tvAuthorName"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@{bookModel.bookAuthor}"
+            android:textColor="@color/raw_medium_text_color"
+            app:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            android:layout_marginTop = "0dp"
+            android:layout_marginStart = "17dp"/>
+
+        <TextView
+            android:id="@+id/tvRarity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+
+            android:background="@drawable/book_list_raw_text_background"
+            android:layout_gravity = "center"
+            android:text="@{bookModel.bookCost}"
+            android:textColor="@color/raw_medium_text_color"
+            app:fontFamily="@font/poppins_medium" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>
